@@ -33,14 +33,13 @@ export default function CreateJobForm({ onSuccess }: CreateJobFormProps) {
     setValue,
   } = useForm();
 
-  // Load draft data on component mount
   useEffect(() => {
     try {
       const draftData = localStorage.getItem('jobDraft');
       if (draftData) {
         const draft = JSON.parse(draftData);
         
-        // Set form values
+   
         if (draft.jobTitle) setValue('jobTitle', draft.jobTitle);
         if (draft.companyName) setValue('companyName', draft.companyName);
         if (draft.location) setLocation(draft.location);
@@ -62,7 +61,7 @@ export default function CreateJobForm({ onSuccess }: CreateJobFormProps) {
     setSavingDraft(true);
     
     try {
-      // Save to localStorage as draft
+
       const draft = {
         jobTitle: data.jobTitle,
         companyName: data.companyName,
@@ -107,7 +106,7 @@ export default function CreateJobForm({ onSuccess }: CreateJobFormProps) {
       };
       
       await axios.post(`${API_URL}/jobs`, payload);
-      localStorage.removeItem('jobDraft'); // Clear draft after successful publish
+      localStorage.removeItem('jobDraft'); 
       setSuccessOpen(true);
     } catch (error) {
       console.error('Error creating job:', error);
