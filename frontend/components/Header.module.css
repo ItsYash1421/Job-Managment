@@ -1,0 +1,103 @@
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 21px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navContainer {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 122px;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 16px;
+  font-family: 'Satoshi Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: #A128FF !important;
+}
+
+.createButton {
+  background: linear-gradient(180deg, #A128FF 0%, #6100AD 113.79%);
+  border: none;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 500;
+  white-space: nowrap;
+  height: 38px;
+  font-size: 14px;
+  font-family: 'Satoshi Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  flex-shrink: 0;
+}
+
+.createButton:hover {
+  background: linear-gradient(180deg, #8f1fe6 0%, #550099 113.79%);
+}
+
+@media (max-width: 1024px) {
+  .navContainer {
+    max-width: 90%;
+    padding: 15px 30px;
+    gap: 20px;
+  }
+
+  .navLinks {
+    gap: 20px;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header {
+    padding: 16px 0;
+  }
+}

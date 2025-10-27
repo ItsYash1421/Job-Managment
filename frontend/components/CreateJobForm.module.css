@@ -1,0 +1,85 @@
+.formContainer {
+  width: 848px;
+  max-width: 90vw;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px 0px rgba(169, 169, 169, 0.25);
+  padding: 32px 40px;
+  overflow: visible;
+}
+
+.formTitle {
+  font-family: 'Satoshi Variable', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.jobTypeWrapper {
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #374151;
+  font-family: 'Satoshi Variable', sans-serif;
+}
+
+.jobTypeButton {
+  text-align: left;
+  justify-content: space-between;
+  border: 1px solid #D1D5DB;
+  background-color: white;
+  color: #6B7280;
+  border-radius: 8px;
+  height: 44px;
+  font-family: 'Satoshi Variable', sans-serif;
+}
+
+.jobTypeButton:hover {
+  background-color: #F9FAFB;
+  border-color: #9CA3AF;
+}
+
+.saveDraftButton {
+  background-color: white;
+  border: 1.5px solid #222222;
+  color: #222222;
+  padding: 16px 60px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: 'Satoshi Variable', sans-serif;
+  height: 59px;
+  width: 232px;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.saveDraftButton:hover {
+  background-color: white;
+  border-color: #222222;
+  color: #222222;
+}
+
+.publishButton {
+  background-color: #00AAFF;
+  border: none;
+  color: white;
+  padding: 16px 60px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: 'Satoshi Variable', sans-serif;
+  height: 59px;
+  width: 207px;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.publishButton:hover {
+  background-color: #0099E6;
+}

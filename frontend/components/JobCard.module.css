@@ -1,0 +1,130 @@
+.card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  box-shadow: 0px 0px 14px 0px rgba(211, 211, 211, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 20px 0px rgba(211, 211, 211, 0.25);
+}
+
+.companyLogo {
+  width: 83.46px;
+  height: 82px;
+  border-radius: 13.18px;
+  border: 1px solid #FFFFFF;
+  background: linear-gradient(180deg, #FEFEFD 0%, #F1F1F1 100%);
+  box-shadow: 0px 0px 10.25px 0px rgba(148, 148, 148, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.timeAgo {
+  background-color: #B0D9FF;
+  color: #000000;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-family: 'Satoshi Variable', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 75px;
+  height: 33px;
+}
+
+.jobTitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #000000;
+  line-height: 1.3;
+  font-family: 'Satoshi Variable', sans-serif;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #9CA3AF;
+  font-size: 14px;
+  font-family: 'Satoshi Variable', sans-serif;
+}
+
+.description {
+  margin: 24px 0;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.descriptionItem {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.6;
+  font-family: 'Satoshi Variable', sans-serif;
+  align-items: flex-start;
+}
+
+.bullet {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.descriptionText {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.applyButton {
+  width: 100%;
+  height: 46px;
+  background: #00AAFF;
+  border: 1px solid #00AAFF;
+  border-radius: 10px;
+  padding: 12px 10px;
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Satoshi Variable', sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 0px 14px 0px rgba(93, 93, 93, 0.15);
+}
+
+.applyButton:hover {
+  background-color: #0099E6;
+  box-shadow: 0px 0px 18px 0px rgba(93, 93, 93, 0.2);
+}
